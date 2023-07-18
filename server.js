@@ -19,6 +19,7 @@ const swaggerjson = require("./swagger.json");
 const chatConfig = require("./Controller/config/socketConfig");
 
 
+
 server.use("/", express.static(path.join(__dirname, "Public")));
 server.use(bodyParser.json({ limit: "1200kb" }));
 connectDb(DATABASE_URL);
